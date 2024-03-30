@@ -1,10 +1,10 @@
-import { AppBar, IconButton, Toolbar, Typography } from '@mui/material';
+import { AppBar, IconButton, Toolbar, Button, ButtonGroup } from '@mui/material';
 
 import { InfoPanel } from './info-panel/info-panel';
 import { ChangeMode } from '../ui/change-mode';
 
 import logoUrl from '@/assets/logo.png';
-import { APP_NAME } from '@/config/constants';
+//import { APP_NAME } from '@/config/constants';
 import { useIsDesktop } from '@/hooks/is-desktop';
 
 export const Header = () => {
@@ -28,17 +28,17 @@ export const Header = () => {
         <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
           <img src={logoUrl} alt="logo" />
         </IconButton>
-        <Typography
-          sx={{
-            flexGrow: 1,
-            display: 'grid',
-            placeItems: 'center'
-          }}
-          variant="h6"
-          component="div"
+
+
+        <ButtonGroup
+          variant='outlined'
+          aria-label="Basic button group"
         >
-          {APP_NAME}
-        </Typography>
+          <Button variant='contained'>Swap</Button>
+          <Button>ChatBot</Button>
+          <Button>WhatsApp</Button>
+        </ButtonGroup>
+
         <ChangeMode />
         {!isDesktop && <InfoPanel />}
       </Toolbar>

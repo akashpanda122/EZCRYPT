@@ -16,6 +16,10 @@ module.exports = {
     mumbai: {
       url: process.env.POLYGON_MUMBAI_URL,
       accounts: [process.env.MUMBAI_PRIVATE_KEY],
+    },
+    avail: {
+      url: process.env.SEPOLIA_AVAIL_URL,
+      accounts: [process.env.SEPOLIA_PRIVATE_KEY],
     }
   }
 };

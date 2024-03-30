@@ -15,6 +15,10 @@ module.exports = {
       url: `https://polygon-mumbai.infura.io/v3/${INFURA_API_KEY}`,
       accounts: [MUMBAI_PRIVATE_KEY],
     },
+    avail: {
+      url: process.env.SEPOLIA_AVAIL_URL,
+      accounts: [process.env.SEPOLIA_PRIVATE_KEY],
+    }
   },
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY,
