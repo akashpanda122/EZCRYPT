@@ -59,6 +59,17 @@ export function Header() {
           <UserOrLogin />
         </React.Suspense>
       </div>
+      <div className="flex items-center justify-center space-x-2">
+        <Button variant="link" asChild className="-ml-2">
+            <Link href="/login">Swap</Link>
+        </Button>
+        <Button variant="link" asChild className="bg-[#5EB3E3]">
+            <Link href="/login">ChatBot</Link>
+        </Button>
+        <Button variant="link" asChild className="-ml-2">
+            <Link href="/login">WhatsApp</Link>
+        </Button>
+      </div>
       <div className="flex items-center justify-end space-x-2">
         {/*<a
           target="_blank"
