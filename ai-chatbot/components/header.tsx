@@ -61,7 +61,7 @@ export function Header() {
       </div>
       <div className="flex items-center justify-center space-x-2">
         <Button variant="link" asChild className="-ml-2">
-            <Link href="/login">Swap</Link>
+            <Link href="http://localhost:5173/promptdefi-web/">Swap</Link>
         </Button>
         <Button variant="link" asChild className="bg-[#5EB3E3]">
             <Link href="/login">ChatBot</Link>

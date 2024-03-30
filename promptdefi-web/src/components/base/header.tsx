@@ -35,7 +35,7 @@ export const Header = () => {
           aria-label="Basic button group"
         >
           <Button variant='contained'>Swap</Button>
-          <Button>ChatBot</Button>
+          <Button><a href='http://localhost:3000/'>Chatbot</a></Button>
           <Button>WhatsApp</Button>
         </ButtonGroup>
 
